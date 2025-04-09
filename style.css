@@ -1,0 +1,108 @@
+/* Stiluri generale */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg,  #96bcde, #a1cee5, #a9d9e7, #bbe4e9, #d8e9ec, #aedcdc);
+  }
+  
+  .titlu {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333; /* Culoare închisă pentru titlu */
+    margin-bottom: 15px; /* Spațiu între titlu și cartonașe */
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Imaginea corpului uman */
+  .corpul-uman {
+    flex: 1;
+    text-align: center;
+    padding-right: 30px;
+  }
+  
+  .corpul-uman img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Linie verticală de separare */
+  .linie-separare {
+    width: 6px; /* grosimea liniei */
+    background-color: #ffffff; /* culoarea liniei */
+    border-radius: 6px;
+    height: 80%; /* să ocupe întreaga înălțime a containerului */
+    margin-left: 30px; /* distanța de la imagine */
+    margin-right: 12%; /* distanța până la lista de cartonașe */
+  }
+  
+  /* Cartonașele (lista) */
+  .cartonase {
+    flex: 1;
+    max-width: 420px;
+    padding-left: 30px;
+    padding-right: 14%; /* adăugăm un pic de padding la dreapta pentru un spațiu mai mic */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;  /* adăugăm un spațiu între cartonașe */
+    max-height: 90vh; /* adăugăm un maximum pentru a evita depășirea paginii */
+    overflow-y: auto; /* facem ca lista să fie scrollabilă dacă sunt prea multe elemente */
+    margin-right: 20px; /* spațiu între cartonașe și marginea dreaptă a paginii */
+  }
+  
+  .cartonase ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cartonas {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px #00342e;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between; /* plasăm iconița în dreapta */
+    align-items: center;  /* aliniem iconița vertical cu textul */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+    height: 60px; /* micșorăm înălțimea cartonașelor */
+  }
+  
+  .cartonas:hover {
+    transform: translateY(-10px);
+  }
+  
+  .cartonas h3 {
+    font-size: 16px;
+    margin: 0;
+    flex: 1;  /* face titlul să ocupe tot spațiul disponibil */
+  }
+  
+  .cartonas a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 5px;
+  }
+  
+  .icon {
+    font-size: 24px; /* mărim iconițele */
+    margin-left: 15px; /* adăugăm puțin spațiu între iconiță și text */
+  }
+  
+  .cartonase .cartonas:nth-child(odd) {
+    background-color: #f0f8ff;
+  }
+  
+  .cartonase .cartonas:nth-child(even) {
+    background-color: #fafafa;
+  }

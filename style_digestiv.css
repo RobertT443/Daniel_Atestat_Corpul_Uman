@@ -1,0 +1,168 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(270deg, #d0ffee, #cbc7ff, #f9ffc4);
+    background-size: 600% 600%;
+    animation: backgroundFlow 20s ease infinite;
+  }
+  
+  @keyframes backgroundFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }  
+  
+  .pagina-detalii {
+    padding: 40px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .titlu {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    color: #1a3d4e;
+  }
+  
+  .sectiune-principala {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  
+  .imagine-detaliu img {
+    width: 100%;
+    max-width: 390px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 52, 46, 0.4);
+  }
+  
+  .bloc-info {
+    flex: 1;
+    min-width: 280px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 52, 46, 0.2);
+    backdrop-filter: blur(4px);
+  }
+  
+  .bloc-info h3 {
+    margin-top: 20px;
+    color: #2b4c5b;
+  }
+  
+  .bloc-info ul {
+    padding-left: 20px;
+  }
+  
+  .bloc-info p,
+  .bloc-info ul {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  /* Casetă: Știai că... */
+  .info-box {
+    background-color: #e3f7e6;
+    border-left: 6px solid #4caf50;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 100, 0, 0.1);
+  }
+  
+  .info-box h4 {
+    margin-top: 0;
+    color: #2e7d32;
+  }
+  
+  /* Timeline / Proces Reflex */
+  .timeline {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 52, 46, 0.2);
+  }
+  
+  .timeline h3 {
+    margin-top: 0;
+    color: #1e4d5f;
+  }
+  
+  .timeline ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .timeline li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+  }
+  
+  .timeline .step {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #4caf50;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  
+  /* Quiz Section */
+  .quiz {
+    background-color: #dcefff;
+    border-left: 6px solid #2196f3;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 255, 0.1);
+  }
+  
+  .quiz h4 {
+    margin-top: 0;
+    color: #0d47a1;
+  }
+  
+  .buton-inapoi {
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #4caf50;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buton-inapoi:hover {
+    background-color: #388e3c;
+  }
+  
+  @media (max-width: 768px) {
+    .sectiune-principala {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .bloc-info {
+      text-align: center;
+    }
+  
+    .timeline ul {
+      text-align: left;
+    }
+  }
+  
